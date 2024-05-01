@@ -1,0 +1,22 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+	<script type="text/javascript" src="bingo.js"></script>
+	<title>BINGO!!!</title>
+</head>
+<body>
+	<p class="broadcast">
+		Welcome to Bingo! Press buttons to do bingo. <br/>
+		Remember: You only <em>fully</em> win when a full house is present. Always play fair and responsibly. <br/>
+		<a class="broadcast" href="./bingo.js">Script source</a>
+	</p>
+	<div id="zb__BingoGrid" class="grid"></div>
+	<div id="zb__BingoCompleted"></div>
+	<script>
+		ZeroBingoClient.init();
+		ZeroBingoClient.attach("zb__BingoGrid");
+	</script>
+	<p class="footer">
+		&copy; Zero Mods 2019 - 2024
+	</p>
+</body>
